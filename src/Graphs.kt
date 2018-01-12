@@ -1,4 +1,4 @@
-open class Node {
+open class Node() {
     private companion object {
         var counter = 0
         fun nextId() = counter++
@@ -11,6 +11,6 @@ open class Node {
     }
 }
 
-class NavGraphNode : Node() {
+open class NavGraphNode : Node() {
 
 }
