@@ -1,0 +1,1 @@
+data class GraphEdge(val from: Node, val toDestination: Node, val traversalCost: Double = 1.0)
