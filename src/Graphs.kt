@@ -12,5 +12,13 @@ open class Node() {
 }
 
 open class NavGraphNode : Node() {
+    private var pos = Vec()
 
+    var position: Vec
+    get() = pos
+    set(value){pos = value}
+
+    override fun toString(): String {
+        return "(x: ${position.xDir}, y: ${position.yDir})"
+    }
 }
